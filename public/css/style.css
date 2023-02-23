@@ -1,0 +1,493 @@
+/*GERAL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*Página Home*/
+
+.brand{
+    text-align: center;
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 80px;
+    color: white;
+    text-shadow: 1px 2px 3px yellow;
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.img-oppacity{
+  opacity: 0.5;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption .btn-primary {
+  color: black;
+  font-family: arial black;
+  font-size: 1.3rem;
+  background-color: rgba(255, 255, 0, 0.959);
+  border-color: #0b1f7a;
+}
+
+.carousel-caption .btn-primary:hover {
+  color: white;
+  background-color: #040c31;
+  border-color: #0b1f7a;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*Páginas de Cadastros de bebidas alcoólicas e não alcoólicas*/
+
+.cadastro-text{
+color: rgba(255, 255, 0, 0.959);
+text-align: center;
+font-size: 2.0rem;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input, label {
+  display: block;
+  outline: none;
+  width: 100%;
+}
+
+#main-container {
+  width: 450px;
+  height: 425px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 0.3rem;
+  padding: 25px;
+}
+
+#main-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.full-box {
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.half-box {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.spacing {
+  margin-right: 2.5%;
+}
+
+label {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+input {
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+}
+
+input:focus {
+  border-color: #1737c7;
+}
+
+#btn-submit {
+  color: black;
+  font-family: arial black;
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: rgba(255, 255, 0, 0.959);
+  border-color: black;
+  border-radius: 20px;
+  height: 50px;
+  cursor: pointer;
+  width: 400px;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+#btn-submit:hover {
+  color: #fff;
+  background-color: #040c31;
+  border-color: #0b1f7a;
+}
+
+#termo {
+  margin: 5px;
+}
+
+#agreement {
+  margin-right: 50px;
+}
+
+#agreement,
+#agreement-label {
+  display: inline-block;
+  width: auto;
+}
+
+.template {
+  display: none;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*Páginas de produtos alcoolicas, não alcoolicas e select*/
+
+.text-alcoolica{
+  color: rgba(255, 255, 0, 0.959);
+  text-align: center;
+  font-size: 2.0rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.text-bebidas{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.0rem;
+  margin-right: 30px;
+
+}
+
+#btn-excluir {
+color: black;
+font-family: arial black;
+font-size: 1.3rem;
+background-color: rgba(255, 255, 0, 0.959);
+border-color: #0b1f7a;
+border-radius: 20px;
+}
+
+#btn-excluir:hover {
+  color: white;
+  background-color: #040c31;
+  border-color: #0b1f7a;
+}
+
+#container2{
+  width: 100%;
+  margin: 0 auto;
+  padding: 70px;
+  display: inline-table;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+}
+
+.alcoolicas {
+  display: inline-table;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+}
+
+#img-bebidas {
+  width: 200px;
+  height: 220px;
+  margin: 10px;
+  float: left;
+}
+
+.actions .select-edit{
+  color: #0b1f7a;
+  font-family: arial black;
+  text-align: center;
+  margin: 5px;
+}
+
+.actions .select-edit:hover{
+  color: red;
+  font-family: arial black;
+  text-align: center;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*Sobre Nós*/
+
+.containersobrenos {
+  margin: 50px;
+  margin-bottom: -30px;
+}
+
+.historia{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgba(255, 255, 0, 0.808);
+  
+}
+
+#text-nossahistoria{
+  text-align: center;
+  color: #e1d8c4;
+}
+
+.img-sobrenos {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 520px;
+  opacity: 0.8;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*Equipe*/
+
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  margin-bottom: -10px;
+
+}
+
+.marketing h2 {
+  font-weight: 400px;
+  width: 100%;
+  margin-left: 200px;
+}
+
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.foto-equipe {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: 200px;
+  margin-left: 300px;
+}
+
+#text-time {
+  color: white;
+  width: 100%;
+  margin-left: 230px;
+  text-align: center;
+}
+
+#name-dev{
+  color: white;
+  width: 100%;
+  margin-left: 230px;
+  text-align: center;
+}
+
+/*Contatos*/
+
+.text-contatos {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgba(255, 255, 0, 0.808);
+  margin-top: 50px;
+}
+
+#container3{
+  width: 1400px;
+  margin: 20px;
+  padding: 70px;
+  flex-wrap: wrap;
+  display: inline-table;
+  justify-content: center;
+  background-color: white;
+}
+
+.email{
+  text-align: center;
+  display: inline-table;
+  width: 350px;
+  margin: 10px;
+  border: 5px solid rgba(60, 192, 245, 0.349);
+  border-radius: 10px;
+  float: left;
+  margin-right: 50px;
+}
+
+.zap{
+  text-align: center;
+  display: inline-table;
+  width: 350px;
+  margin: 10px;
+  border: 5px solid rgba(60, 192, 245, 0.349);
+  border-radius: 10px;
+  float: left;
+  margin-right: 50px;
+}
+
+.instagram{
+  text-align: center;
+  display: inline-table;
+  width: 350px;
+  margin: 10px;
+  border: 5px solid rgba(60, 192, 245, 0.349);
+  border-radius: 10px;
+  float: left;
+  margin-right: 50px;
+}
+
+#nome_style {
+  width: 300px;
+}
+
+#mensagem_style {
+  width: 300px;
+  min-height: 100px;
+}
+#enviar_style {
+  height: 30px;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*Login*/
+
+.text-center {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #000000;
+  color: #fff;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type='email'] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type='password'] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #0b1f7a;
+  border-color: #0b1f7a;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #040c31;
+  border-color: #0b1f7a;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/*Rodapé*/
+
+#footer-home{
+width: 80%;
+margin: 200px;
+height: 5px;
+}
+
+.list-unstyled .text-small{
+  color: white;
+}
+
+.list-unstyled .text-small .text-muted:hover{
+color: white;
+}
+
+.header-footer{
+  color: white;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+  /*Responsividade*/
+  
+  @media (min-width: 40em) {
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  }
+
+  @media (max-width: 490px) {
+    #main-container {
+      width: 300px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 25px;
+      font-size: 8px;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+ }
+

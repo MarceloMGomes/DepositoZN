@@ -1,0 +1,39 @@
+<h1 class="text-alcoolica">{{Alcoolica.nome}}</h1>
+
+
+<div id="main-container">
+<form action="/produtos/update" method="POST" class="form">
+    <input type="hidden" name="id" value="{{Alcoolica.id}}"> {{!-- Hidden porque o DB precisa achar todas as colunas, e o usuário não pode acessar o id. Ai deixamos oculto só para o bd encontrar --}}
+
+    <div class="full-box">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" placeholder="Digite o nome do produto" value="{{Alcoolica.nome}}">
+    </div>
+
+    <div class="half-box spacing">
+        <label for="tamanho">Tamanho:</label>
+        <input type="text" name="tamanho" placeholder="Digite o tamanho do produto" value="{{Alcoolica.tamanho}}">
+    </div>
+
+    <div class="full-box">
+        <label for="preco">Preço:</label>
+        <input type="text" name="preco" placeholder="Digite o preço do produto" value="{{Alcoolica.preco}}">
+    </div>
+
+    <div class="half-box spacing">
+        <label for="tipo">Categoria:</label>
+        <input type="text" name="tipo" placeholder="Digite a categoria do produto" value="{{Alcoolica.tipo}}">
+    </div>
+
+    <div class="full-box">
+        <label for="imagem">Imagem:</label>
+        <input type="text" name="imagem" placeholder="Digite a imagem do produto" value="{{Alcoolica.imagem}}">
+    </div> 
+
+    <div class="full-box">
+    <input id="btn-submit" type="submit" value="EDITAR">
+    </div>
+
+</form>
+
+</div>

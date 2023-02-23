@@ -1,0 +1,47 @@
+<h1 class="cadastro-text">Realize o seu cadastro</h1>
+
+
+<div id="main-container">
+<form action="/cadastro/usuario" method="POST" class="form" id="register-form" name="formCadastro"> 
+
+    <div class="full-box">
+        <label for="nome">Nome</label>
+        <input class="half-box" type="text" name="nome" placeholder="Digite o seu nome" required>
+    </div>
+
+    <div class="half-box spacing">
+        <label for="cpf">CPF</label>
+        <input class="half-box" type="number" name="cpf" placeholder="Digite apenas o número do seu cpf" required>
+    </div>
+
+    <div class="full-box">
+        <label for="password">Senha</label>
+        <input class="half-box" type="password" name="password" placeholder="Digite a sua senha" required>
+    </div>
+
+    <div class="half-box spacing">
+        <label for="confirmpassword">Confirme a sua senha</label>
+        <input class="half-box" type="password" name="confirmpassword" placeholder="Confirme a sua senha" required>
+    </div>
+
+
+    <div class="full-box">
+        <input id="btn-submit" type="submit" value="CADASTRAR"/>
+    </div>
+    
+</form>
+
+<div>  
+    {{#if messages.message}}
+        <div class="message">
+          {{messages.message}}
+        </div>
+      {{/if}}
+      {{#if message}}
+        <div class="message">
+          {{message}}
+        </div>
+      {{/if}}
+</div>
+
+</div>

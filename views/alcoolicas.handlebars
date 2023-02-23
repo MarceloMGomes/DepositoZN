@@ -1,0 +1,27 @@
+<h1 class="text-alcoolica">Bebidas Alcoólicas</h1>
+<br><br>
+
+ <div id="container2">
+{{#each Alcoolica}}
+    <div class="alcoolicas">
+<img src="{{this.imagem}}" alt="Imagem da bebida" id="img-bebidas">
+<ul>
+<ol class="text-bebidas">Bebida: {{this.nome}}</ol>
+<ol class="text-bebidas">Tamanho: {{this.tamanho}}</ol>
+<ol class="text-bebidas">Preço: R$ {{this.preco}}</ol>
+</ul>
+    <div class="actions">
+        <ul>
+        <ol><a class="select-edit" href="/produtos/{{this.id}}">Select</a><a class="select-edit" href="/produtos/edit/{{this.id}}">Edit</a></ol>
+      </ul> 
+        <form action="/produtos/delete/{{this.id}}" method="POST">
+            <input id="btn-excluir" type="submit" value="EXCLUIR">
+        </form>
+         </div>
+    </div>
+{{/each}}
+</div>
+
+
+
+
